@@ -28,25 +28,26 @@ This project helps:
 ---
 ## 📁 Project Structure
 
-📁 Customer-Churn-Prediction
+```
+Customer-Churn-Prediction/
 │
-├── 📁 data
+├── data/
 │   └── telco_churn.csv
 │
-├── 📁 models
+├── models/
 │   └── churn_model.pkl
 │
-├── 📁 outputs
+├── outputs/
 │   ├── confusion_matrix.png
 │   └── feature_importance.csv
 │
-├── 📁 images
+├── images/
 │   ├── api.png
 │   ├── dashboard.png
 │   ├── positive.png
 │   └── negative.png
 │
-├── 📁 src
+├── src/
 │   ├── api.py
 │   ├── preprocess.py
 │   └── train.py
@@ -54,7 +55,7 @@ This project helps:
 ├── app.py
 ├── requirements.txt
 └── README.md
-
+```
 ---
 
 ## 📊 Dataset Information
