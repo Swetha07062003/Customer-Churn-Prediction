@@ -1,31 +1,20 @@
-# 📊 Customer Churn Prediction System
+# 📊 Customer Churn Prediction
 
-An end-to-end Machine Learning project that predicts whether a telecom customer is likely to churn. The system includes a trained ML model, FastAPI backend, and an interactive Streamlit dashboard.
-
----
-
-## 🚀 Project Overview
-
-Customer churn is a major problem for telecom companies. Retaining existing customers is more cost-effective than acquiring new ones.
-
-This project helps:
-
-* Predict customer churn probability
-* Classify customers into risk levels (Low / Medium / High)
-* Provide an interactive dashboard for real-time predictions
+This project predicts whether a customer is likely to churn using Machine Learning.  
+It includes data preprocessing, model training, FastAPI backend, and a Streamlit dashboard.
 
 ---
 
-## 🧠 Tech Stack
+## 🚀 Features
 
-* Python
-* Pandas, NumPy
-* Scikit-learn
-* FastAPI
-* Uvicorn
-* Streamlit
+- 🔍 Data preprocessing and feature engineering
+- 🤖 Machine Learning model (Churn Prediction)
+- ⚡ FastAPI backend for predictions
+- 🎯 Streamlit interactive dashboard
+- 📊 Feature importance and confusion matrix visualization
 
 ---
+
 ## 📁 Project Structure
 
 ```
@@ -56,129 +45,89 @@ Customer-Churn-Prediction/
 ├── requirements.txt
 └── README.md
 ```
----
-
-## 📊 Dataset Information
-
-Dataset: Telco Customer Churn Dataset
-
-Features include:
-
-* Gender
-* Senior Citizen
-* Tenure
-* Monthly Charges
-* Contract Type
-* Payment Method
-* Internet Services
-
-Target:
-
-* Churn (0 = No, 1 = Yes)
 
 ---
 
-## ⚙️ Model Details
+## ⚙️ Installation
 
-* Classification model used
-* Data preprocessing:
+1. Clone the repository:
+```
+git clone https://github.com/Swetha07062003/Customer-Churn-Prediction.git
+cd Customer-Churn-Prediction
+```
 
-  * Missing value handling
-  * Encoding categorical features
-
-Outputs:
-
-* Churn prediction
-* Probability score
-* Risk level
-
----
-
-## 📈 Model Performance
-
-Accuracy  : ~80%
-Precision : ~78%
-Recall    : ~75%
-F1 Score  : ~76%
-
----
-
-## ⚠️ Risk Level Logic
-
-| Probability | Risk   |
-| ----------- | ------ |
-| < 0.4       | Low    |
-| 0.4 - 0.7   | Medium |
-| > 0.7       | High   |
-
----
-
-## 🔄 How It Works
-
-1. User enters data in Streamlit UI
-2. Data is sent to FastAPI backend
-3. Preprocessing is applied
-4. Model predicts churn
-5. Output shows:
-
-   * Prediction
-   * Probability
-   * Risk level
+2. Install dependencies:
+```
+pip install -r requirements.txt
+```
 
 ---
 
 ## ▶️ Run the Project
 
-Clone repository:
-git clone https://github.com/Swetha07062003/Customer-Churn-Prediction.git 
+### 1️⃣ Train Model
+```
+python src/train.py
+```
 
-cd Customer-Churn-Prediction
-
-Install dependencies:
-pip install -r requirements.txt
-
-Start FastAPI:
+### 2️⃣ Run FastAPI Server
+```
 uvicorn src.api:app --reload
+```
 
-Run dashboard:
-streamlit run app.py
+👉 API runs at: http://127.0.0.1:8000/docs
 
 ---
 
-## 📸 Screenshots
+### 3️⃣ Run Dashboard
+```
+streamlit run app.py
+```
 
-API Interface
+👉 Dashboard runs at: http://localhost:8501
+
+---
+
+## 📊 Model Details
+
+- Dataset: Telco Customer Churn Dataset
+- Algorithm: Classification Model (e.g., Logistic Regression / Random Forest)
+- Output:
+  - Churn Prediction (0 / 1)
+  - Probability Score
+  - Risk Level (Low / Medium / High)
+
+Customer churn prediction helps businesses reduce customer loss and improve retention strategies. :contentReference[oaicite:1]{index=1}
+
+---
+
+## 🖥️ Screenshots
+
+### 📌 API
 ![API](images/api.png)
 
-Dashboard UI
+### 📌 Dashboard
 ![Dashboard](images/dashboard.png)
 
-Customer Will Stay
+### 📌 Churn Prediction (Positive)
 ![Positive](images/positive.png)
 
-Customer Will Churn
+### 📌 Churn Prediction (Negative)
 ![Negative](images/negative.png)
 
 ---
 
-## 🎯 Use Case
+## 📌 Future Improvements
 
-* Identify customers likely to churn
-* Improve retention strategies
-* Reduce revenue loss
-
----
-
-## 🚀 Future Improvements
-
-* Deploy on cloud
-* Add explainability (SHAP)
-* Use advanced ML models
+- 🔍 Add SHAP for explainability
+- ☁️ Deploy on cloud (AWS / Render / Railway)
+- 🔄 Add real-time prediction support
 
 ---
 
 ## 👩‍💻 Author
 
-Swetha K
+Swetha K  
+ 
 ---
 
