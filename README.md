@@ -130,7 +130,8 @@ F1 Score  : ~76%
 ## ▶️ Run the Project
 
 Clone repository:
-git clone https://github.com/Swetha07062003/Customer-Churn-Prediction.git
+git clone https://github.com/Swetha07062003/Customer-Churn-Prediction.git 
+
 cd Customer-Churn-Prediction
 
 Install dependencies:
