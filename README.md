@@ -26,37 +26,33 @@ This project helps:
 * Streamlit
 
 ---
-
 ## 📁 Project Structure
 
 Customer-Churn-Prediction/
-│
 ├── data/
-│ └── telco_churn.csv
+│   └── telco_churn.csv
 │
 ├── models/
-│ └── churn_model.pkl
+│   └── churn_model.pkl
 │
 ├── outputs/
-│ ├── confusion_matrix.png
-│ └── feature_importance.csv
+│   ├── confusion_matrix.png
+│   └── feature_importance.csv
 │
 ├── images/
-│ ├── api.png
-│ ├── dashboard.png
-│ ├── positive.png
-│ ├── negative.png
-│ └── output_window.png
+│   ├── api.png
+│   ├── dashboard.png
+│   ├── positive.png
+│   └── negative.png
 │
 ├── src/
-│ ├── api.py
-│ ├── preprocess.py
-│ ├── train.py
+│   ├── api.py
+│   ├── preprocess.py
+│   └── train.py
 │
 ├── app.py
 ├── requirements.txt
 └── README.md
-
 
 ---
 
@@ -160,9 +156,6 @@ Customer Will Stay
 Customer Will Churn
 ![Negative](images/negative.png)
 
-Output Window
-![Output](images/output_window.png)
-
 ---
 
 ## 🎯 Use Case
@@ -177,7 +170,6 @@ Output Window
 
 * Deploy on cloud
 * Add explainability (SHAP)
-* Improve UI
 * Use advanced ML models
 
 ---
@@ -185,7 +177,5 @@ Output Window
 ## 👩‍💻 Author
 
 Swetha K
-Electronics & Communication Engineering
-
 ---
 
